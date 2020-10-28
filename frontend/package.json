@@ -2,18 +2,23 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:5000/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "body-parser": "^1.19.0",
+    "javascript": "^1.0.0",
+    "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=5001 react-scripts start",
     "build": "react-scripts build",
+    "build-watch": "react-scripts build -w",
+    "build-webpack": "webpack --config webpack.config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
